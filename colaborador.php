@@ -4,14 +4,25 @@ class Colaborador{
     protected $salarioBase;
     private $identificacion;
 }
+//colaboradores tiempo completo
  colaborador1 = new Colaborador();
- colaborador2 = new 
+
+//, colaboradores por comisión (salario = salario base + comisión
+ colaborador2 = new Colaborador();
+
+ //colaboradores por hora (salario = tarifa * hora).
+ colaborador3 = new Colaborador();
 
 
-    public function __construct($nombre, $salarioBase, $identificacion){
-        $this->nombre = $nombre;
-        $this->salarioBase = $salarioBase;
-        $this->identificacion = $identificacion;
+
+
+
+public function __construct($nombre, $salarioBase, $identificacion)
+{
+    $this->nombre = $nombre;
+    $this->salarioBase = $salarioBase;
+    $this->identificacion = $identificacion;
+
 }
 public function getIdenteficacion()
 {
@@ -28,4 +39,4 @@ public function getSalarioBase()
     return $this->salarioBase;
 }
 
-abstract public function calcularSalar
+

@@ -1,4 +1,6 @@
     <?php
+
+
     /*Desarrollar un sistema en PHP que modele diferentes tipos de empleados y calcule su salario, aplicando: 
     Clases y objetos 
     Atributos públicos, privados y protegidos 
@@ -15,5 +17,10 @@
     Clases hijas para los colaboradores tiempo completo, colaboradores por comisión (salario = salario base + comisión), colaboradores por hora (salario = tarifa * hora). 
     Aplique polimorfismo para calcular los salarios de los colaboradores.
     */
-    
+        class Colaborador{
+    public $nombre;         
+    protected $salarioBase;
+    private $identificacion;
+    }
+
 ?>
