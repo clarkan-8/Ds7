@@ -28,4 +28,4 @@ public function getSalarioBase()
     return $this->salarioBase;
 }
 
-abstrac
+abstract public function calcularSalar
