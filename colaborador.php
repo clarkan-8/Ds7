@@ -3,40 +3,31 @@ class Colaborador{
     public $nombre;
     protected $salarioBase;
     private $identificacion;
-}
-//colaboradores tiempo completo
- colaborador1 = new Colaborador();
 
-//, colaboradores por comisión (salario = salario base + comisión
- colaborador2 = new Colaborador();
+    public function __construct($nombre, $salarioBase, $identificacion)
+    {
+        $this->nombre = $nombre;
+        $this->salarioBase = $salarioBase;
+        $this->identificacion = $identificacion;
+    }
 
- //colaboradores por hora (salario = tarifa * hora).
- colaborador3 = new Colaborador();
+    public function getIdentificacion()
+    {
+        return $this->identificacion;
+    }
 
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
 
-
-
-
-public function __construct($nombre, $salarioBase, $identificacion)
-{
-    $this->nombre = $nombre;
-    $this->salarioBase = $salarioBase;
-    $this->identificacion = $identificacion;
-
-}
-public function getIdenteficacion()
-{
-    return  $this->identificacion;
+    public function getSalarioBase()
+    {
+        return $this->salarioBase;
+    }
 }
 
-public function getNombre()
-{
-    return $this->nombre;
-}
-
-public function getSalarioBase()
-{
-    return $this->salarioBase;
-}
-
-
+// Ahora sí puedes crear objetos correctamente
+$colaboradorTC = new Colaborador("Juan", 1000, "123");
+$colaboradorC = new Colaborador("Ana", 800, "456");
+$colaboradorH = new Colaborador("Luis", 10, "789");

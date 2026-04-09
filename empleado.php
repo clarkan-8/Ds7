@@ -1,16 +1,22 @@
 <?php
 
 class Procesos{
+
+    // Tiempo completo
     public function calcularSalario($colaborador)
     {
         return $colaborador->salarioBase;
     }
-    public function calcularSalariohora($colaborador)
+
+    // Por hora: tarifa * horas trabajadas
+    public function calcularSalarioHora($colaborador)
     {
-        return $colaborador->salarioBase;
+        return $colaborador->tarifa * $colaborador->horas;
     }
-    public function calcularComision($colaborador){
-        return $colaborador->salarioBase;
+
+    // Por comisión: salario base + comisión
+    public function calcularComision($colaborador)
+    {
+        return $colaborador->salarioBase + $colaborador->comision;
     }
 }
-
